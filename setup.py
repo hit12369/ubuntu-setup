@@ -58,6 +58,10 @@ install('ubuntu-restricted-extras')
 # Git
 install('git')
 
+# Ansible
+apt_add('ppa:ansible/ansible')
+install('ansible')
+
 # Sublime Text
 apt_key('https://download.sublimetext.com/sublimehq-pub.gpg')
 apt_add('deb https://download.sublimetext.com/ apt/stable/')
